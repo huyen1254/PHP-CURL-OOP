@@ -3,9 +3,9 @@
 namespace Site\PageCrawler;
 
 use Site\Functions\MatchesData;
-//use Site\InterfaceGetData;
+use Site\InterfaceGetData;
 
-class Vnexpress extends MatchesData //implements InterfaceGetData
+class Vnexpress extends MatchesData implements InterfaceGetData
 {
     protected $html;
 
