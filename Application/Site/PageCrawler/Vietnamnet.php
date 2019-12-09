@@ -3,9 +3,9 @@
 namespace Site\PageCrawler;
 
 use Site\Functions\MatchesData;
-//use Site\InterfaceGetData;
+use Site\InterfaceGetData;
 
-class Vietnamnet extends MatchesData //implements InterfaceGetData
+class Vietnamnet extends MatchesData implements InterfaceGetData
 {
     private $html;
 
