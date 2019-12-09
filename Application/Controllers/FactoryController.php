@@ -25,7 +25,15 @@ class FactoryController extends Controller
         }
         //echo du lieu
         echo '<h2> ' . $title . '</h2> ' . $date  . $content;
+        $data = [
+            'host' => $dataPage['host'],
+            'path' => $dataPage['path'],
+            'title' => $title,
+            'content' => $content,
+            'date' => $date
+        ];
 
+        return $data;
     }
     //do addPage() in model/model.php
     public function addToTheDatabase($data)
